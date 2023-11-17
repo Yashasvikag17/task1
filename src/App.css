@@ -1,0 +1,126 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --text-color: #333;
+  --background-color: #eff0e9;
+  --accent-color: #e74c3c;
+}
+
+*{
+
+  margin: 0%;
+  padding: 1%;
+  background:linear-gradient(to right bottom,rgb(222, 222, 232),rgb(179, 218, 246),rgb(143, 143, 140));
+}
+
+
+.container {
+  max-width: 100%;
+  margin: 0 ;
+  padding: 20px;
+  /* background-color: var(--background-color); */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+/* background:linear-gradient(to right bottom,rgb(229, 229, 236),rgb(95, 178, 236),rgb(100, 100, 89)); */
+}
+
+
+h1, h2 {
+  color: var(--primary-color);
+}
+
+h2 {
+  margin-top: 20px;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 5px;
+}
+
+
+label {
+  margin-right: 5px;
+  color: var(--text-color);
+  margin: 2px 3px 2px 40px;
+}
+.btn{
+  display: flex;
+  float: right;
+}
+.btn:hover{
+  color: white;
+  background: #333;
+
+}
+
+select, button {
+  height: 45px;
+
+  max-width: fit-content;
+  /* background-color: #c0d83d; */
+  display: inline-block;
+  margin: 10px 2px 2px auto;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  background-color: white;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+button {
+
+  background-color: var(--primary-color);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+strong {
+  font-size: 1.2em;
+  color: var(--primary-color);
+}
+
+p {
+  margin: 0;
+}
+
+/* Style for multi-time winners */
+.multi-time-winners {
+  margin-top: 20px;
+}
+
+.multi-time-winners li {
+  background-color: var(--secondary-color);
+  color: white;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+
+
+.error-message {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.loading-message {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
